@@ -46,22 +46,22 @@
         <div><img src="https://mc.yandex.ru/watch/97165076" style="position:absolute; left:-9999px;" alt="" /></div>
     </noscript>
     <!-- /Yandex.Metrika counter -->
-   <script src="js/rainyday.js"></script>
+    <script src="js/rainyday.js"></script>
 
-    <script> 
-  
+    <script>
+
         function run() {
-                      var rainyDay = new RainyDay({
-                          image: 'back' // Target p element with ID, RainyDay.js will use backgorund image to simulate rain effects.
-                      });
-                      window.setTimeout(function () {
-                          // rainyDay.destroy()
-                      }, 1000)
-                  }
-          </script> 
-      
-      
-       
+            var rainyDay = new RainyDay({
+                image: 'back' // Target p element with ID, RainyDay.js will use backgorund image to simulate rain effects.
+            });
+            window.setTimeout(function () {
+                // rainyDay.destroy()
+            }, 1000)
+        }
+    </script>
+
+
+
 
 </head>
 
@@ -89,19 +89,21 @@
             </div>
         </div>
     </div>
-    
-    <section class="bg-hero bg-cover bg-center bg-no-repeat z-40 relative overflow-hidden">
-        <canvas id="back"></canvas>
-        <div class="container mx-auto">
-            <div class="flex h-[700px] items-start justify-center flex-col">
-                <h1 class="text-white uppercase lg:text-[48px] text-[24px]">Ремонт и установка<br>
-                    пластиковых и алюминиевых окон в астане</h1>
-                <p class="text-white py-5 text-[18px] uppercase">Позвоните и мастер бесплатно приедет через 34 мин.</p>
-                <a href="https://wa.link/ekrq5o"
-                    class="bg-secondary px-5 py-2 rounded-lg uppercase text-[14px] text-gray-800 tracking-wide font-bold">вызвать
-                    мастера</a>
-            </div>
 
+    <section class="z-40 relative overflow-hidden">
+        <div id="back" class="bg-hero bg-cover bg-center bg-no-repeat">
+            <div class="container mx-auto">
+                <div class="flex h-[700px] items-start justify-center flex-col">
+                    <h1 class="text-white uppercase lg:text-[48px] text-[24px]">Ремонт и установка<br>
+                        пластиковых и алюминиевых окон в астане</h1>
+                    <p class="text-white py-5 text-[18px] uppercase">Позвоните и мастер бесплатно приедет через 34 мин.
+                    </p>
+                    <a href="https://wa.link/ekrq5o"
+                        class="bg-secondary px-5 py-2 rounded-lg uppercase text-[14px] text-gray-800 tracking-wide font-bold">вызвать
+                        мастера</a>
+                </div>
+
+            </div>
         </div>
 
         <div class="border-t border-white border-opacity-20 absolute z-50 bottom-0 left-0 w-full py-5">
