@@ -9,18 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="output.css">
 
-    <script src="https://mubaidr.js.org/rainyday.js/js/rainyday.min.js"></script>
-    <script>
-        function run() {
-            var rainyDay = new RainyDay({
-                image: 'background' // Target p element with ID, RainyDay.js will use backgorund image to simulate rain effects.
-            });
-            window.setTimeout(function () {
-                // rainyDay.destroy()
-            }, 1000)
-        }
 
-    </script>
+    <script type="text/javascript" src="https://www.l2.io/ip.js?var=userip"></script>
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16545788753">
@@ -48,22 +38,34 @@
             clickmap: true,
             trackLinks: true,
             accurateTrackBounce: true,
-            webvisor: true
+            webvisor: true,
+            params: { 'ip': userip }
         });
     </script>
     <noscript>
         <div><img src="https://mc.yandex.ru/watch/97165076" style="position:absolute; left:-9999px;" alt="" /></div>
     </noscript>
     <!-- /Yandex.Metrika counter -->
+   <script src="js/rainyday.js"></script>
 
-
+    <script> 
+  
+        function run() {
+                      var rainyDay = new RainyDay({
+                          image: 'back' // Target p element with ID, RainyDay.js will use backgorund image to simulate rain effects.
+                      });
+                      window.setTimeout(function () {
+                          // rainyDay.destroy()
+                      }, 1000)
+                  }
+          </script> 
+      
+      
+       
 
 </head>
 
-<body>
-
-
-
+<body onload="run();">
     <div class="nabar w-full absolute top-0 left-0 border-b border-white border-opacity-20 z-50">
         <div class="container mx-auto">
             <div class="flex items-center justify-between w-full py-5">
@@ -87,7 +89,8 @@
             </div>
         </div>
     </div>
-    <section id="background" class="bg-hero bg-cover bg-center bg-no-repeat relative">
+    
+    <section id="back" class="h-[600px]  bg-hero bg-cover bg-center bg-no-repeat z-50 ">
         <div class="container mx-auto">
             <div class="flex h-[700px] items-start justify-center flex-col">
                 <h1 class="text-white uppercase lg:text-[48px] text-[24px]">Ремонт и установка<br>
